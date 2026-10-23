@@ -1,0 +1,22 @@
+{
+  "name": "ai-tool-calling-agent",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A small TypeScript function-calling orchestration demo with a scripted offline mock and tests.",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types src/cli.ts --demo",
+    "demo": "node --experimental-strip-types src/cli.ts --demo",
+    "live": "node --experimental-strip-types src/cli.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}

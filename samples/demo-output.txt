@@ -1,0 +1,13 @@
+> npm start
+
+Mode: offline demo (no LLM)
+Prompt: Investigate the health of payments-api and calculate its error rate.
+
+[tool] get_service_status | ok
+[tool] search_incidents | ok
+[tool] calculate_error_rate | ok
+
+Answer:
+DEMO (scripted calls, no LLM): payments-api is degraded in a synthetic dataset. 36 failures out of 1,200 requests (3% error rate). Matching incident IDs: INC-104, INC-099. No external actions were taken.
+
+Completed in 3 model round(s) with 3 tool call(s).
